@@ -1,0 +1,26 @@
+# Note that ! negates an ignore.
+.DS_Store
+.Trashes
+*.swp
+*~.nib
+*.lock
+*.class
+*.bin
+
+# Eclipse' auto-generated files\
+bin/*
+gen/*
+obj/*
+
+# Android gradle
+KreyosAndroid/bin/*
+KreyosAndroid/gen/*
+KreyosAndroid/facebook/bin/*
+KreyosAndroid/facebook/gen/*
+KreyosAndroid/google-play-services_lib/bin/*
+KreyosAndroid/google-play-services_lib/gen/*
+KreyosAndroid/libslidemenu/bin/*
+KreyosAndroid/libslidemenu/gen/*
+KreyosAndroid/facebook/build/*
+KreyosAndroid/google-play-services_lib/build/*
+KreyosAndroid/libslidemenu/build/*
