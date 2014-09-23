@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg" >
+
+    <ImageView
+        android:id="@+id/create_kreyos_email_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/nav_logo" />
+    
+     <EditText
+         android:id="@+id/create_kreyos_email_email"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_kreyos_email_logo"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="50dp"
+         android:layout_weight="1.0"
+         android:background="@drawable/bg_corner_border_white"
+         android:editable="true"
+         android:ems="10"
+         android:gravity="center_vertical"
+         android:hint="EMAIL"
+         android:paddingLeft="20dp"
+         android:textSize="25sp" >
+
+         <requestFocus />
+     </EditText>
+     
+     <EditText
+         android:id="@+id/create_kreyos_email_password"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_kreyos_email_email"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="5dp"
+         android:layout_weight="1.0"
+         android:background="@drawable/bg_corner_border_white"
+         android:editable="true"
+         android:ems="10"
+         android:hint="PASSWORD"
+         android:inputType="textPassword"
+         android:paddingLeft="20dp"
+         android:textSize="25sp" >
+
+     </EditText>
+     
+     <EditText
+         android:id="@+id/create_kreyos_email_confirm_password"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_kreyos_email_password"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="5dp"
+         android:layout_weight="1.0"
+         android:background="@drawable/bg_corner_border_white"
+         android:editable="true"
+         android:ems="10"
+         android:hint="CONFIRM PASSWORD"
+         android:inputType="textPassword"
+         android:paddingLeft="20dp"
+         android:textSize="25sp" >
+
+     </EditText>
+    
+     <Button
+         android:id="@+id/create_kreyos_email_btn_next"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_kreyos_email_confirm_password"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="15dp"
+         android:background="@color/dark"
+         android:text="NEXT"
+         android:textColor="@color/white" />
+
+     <RelativeLayout
+         android:id="@+id/create_kreyos_email_footer"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:background="@color/deepblue" >
+
+         <ImageView
+             android:id="@+id/create_kreyos_email_footer_icon"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:background="@color/facebook_blue"
+             android:src="@drawable/lockicon" />
+
+         <TextView
+             android:id="@+id/create_kreyos_email_footer_text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="17dp"
+             android:layout_toRightOf="@id/create_kreyos_email_footer_icon"
+             android:text="ALREADY HAVE A KREYOS ID? \nLOGIN HERE."
+             android:textColor="@color/white" />
+
+     </RelativeLayout>
+     
+</RelativeLayout>

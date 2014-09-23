@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kreyos</string>
+    
+    <string name="pageHomeTitle">Kreyos</string>
+    <string name="pageActivityTitle">Activity - Today</string>
+    <string name="pageSportsTitle">Sports</string>
+    <string name="pageMeTitle">Me</string>
+    <string name="pageFriendsTitle">Friends</string>
+    <string name="pageMoreTitle">More Options</string>
+    
+    <string name="loginFirst">Login your account first</string>
+    <string name="points">Points</string>
+    <string name="km">km</string>
+    <string name="time7Days">7 Days</string>
+    
+    <string name="home_btn_overall_activities">OVERALL ACTIVITIES</string>
+    <string name="home_btn_pick">PICK A DAILY TARGET</string>
+    
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="onlyContacts">Only Contacts</string>
+    <string name="incomingCallerId">Incoming Caller ID</string>
+    
+    <string name="loadMore">LOAD MORE</string>
+    
+    <string name="levelTitle">Level</string>
+    <string name="pointsTitle">Points Earned</string>
+    <string name="ptnTitle">to next level</string>
+    <string name="biking">Biking</string>
+    <string name="running">Running</string>
+    <string name="walking">Walking</string>
+    <string name="all">All</string>
+    <string name="goBack">Go Back</string>
+    <string name="height">Height</string>
+    <string name="watchHande">Watch Hand</string>
+    <string name="enable">Enable</string>
+    <string name="cm">cm</string>
+    <string name="uninstallSelected">Uninstall Selected</string>
+    
+    <string name="sampleDate">July 2, 3013</string>
+    <string name="sampleTime">7:30am - 2:00pm</string>
+    <string name="information">Information</string>
+    <string name="sampleBatteryLife">1 hour remaining</string>
+    <string name="sampleFloat">2.8</string>
+    <string name="connected">Connected</string>
+    <string name="viewDetail">View Detail</string>
+    
+    <string name="hour">Hour</string>
+    <string name="colon">:</string>
+    <string name="min">Min</string>
+    
+    <string name="gadget">Gadget</string>
+    <string name="info">Info</string>
+    <string name="deviceIsCurrentlyConnected">DEVICE IS CURRENTLY CONNECTED</string>
+    <string name="gadgetName">Gadget Name</string>
+    <string name="sampleGedgetName">My First Watch</string>
+    
+    <string name="installed">Installed</string>
+    <string name="more">More</string>
+    
+    <string name="tableColEditGoals">Edit Goals</string>
+    <string name="tableColCurrent">Current</string>
+    <string name="tableColGoal">Goal</string>
+    <string name="tableColAverage">Average</string>
+    
+    <string name="tableRowCalories">Calories</string>
+    <string name="tableRowSteps">Steps</string>
+    <string name="tableRowFloors">Floors</string>
+    <string name="resume">Resume</string>
+    <string name="finish">Finish</string>
+    
+    <string name="timeSegementPrev">&lt;</string>
+    <string name="timeSegementNext">&gt;</string>
+    
+    <string name="totalWorkoutTime">Total Workout Time</string>    
+    
+    <string name="stopWorkout">STOP WORKOUT</string>
+    <string name="startWorkout">START WORKOUT</string>
+    <string name="pauseWorkout">PAUSE WORKOUT</string>
+    <string name="workout">Workout</string>
+    <string name="customize">Customize</string>
+    
+    <string name="kc">kc</string>
+    <string name="nullUnit"></string>
+    <string name="perMile">per mile</string>
+    <string name="bpm">bpm</string>
+    <string name="mph">mph</string>
+    <string name="feet">feet</string>
+    <string name="miles">miles</string>
+    <string name="adjustYourDailyGoals">Adjust your daily goals</string>
+    <string name="setGoal">Set Goal:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    
+    <string name="startTime">00:00:00</string>
+    <string name="nullValue">_ _</string>
+    
+    <string name="paceML">Pace</string>
+    <string name="heartRateML">Heart\nRate</string>
+    <string name="avgHeartRateML">Avg. Heart\nRate</string>
+    <string name="avgSpeedML">Average\nSpeed</string>
+    <string name="maxHeartRateML">Max Heart\nRate</string>
+    <string name="topSpeedML">Top Speed</string>
+    <string name="eleGainML">Elevation</string>
+    <string name="speedML">Speed</string>
+    <string name="caloriesML">Calories</string>
+    <string name="distanceML">Distance</string>
+    <string name="curLapML">Current\nLap</string>
+    <string name="altitudeML">Altitude</string>
+    <string name="bestLapML">Best\nLap</string>
+    <string name="floorsML">Floors</string>
+    <string name="stepsML">Steps</string>
+    <string name="avgPaceML">Average\nPace</string>
+    <string name="avgLapML">Average\nLap</string>
+    <string name="timeOfTheDayML">Time of\nthe day</string>
+    
+    <string name="paceSL">Pace</string>
+    <string name="heartRateSL">Heart Rate</string>
+    <string name="avgHeartRateSL">Avg. Heart Rate</string>
+    <string name="avgSpeedSL">Average Speed</string>
+    <string name="maxHeartRateSL">Max Heart Rate</string>
+    <string name="topSpeedSL">Top Speed</string>
+    <string name="eleGainSL">Elevation</string>
+    <string name="speedSL">Speed</string>
+    <string name="caloriesSL">Calories</string>
+    <string name="distanceSL">Distance</string>
+    <string name="curLapSL">Current Lap</string>
+    <string name="altitudeSL">Altitude</string>
+    <string name="bestLapSL">Best Lap</string>
+    <string name="floorsSL">Floors</string>
+    <string name="stepsSL">Steps</string>
+    <string name="avgPaceSL">Average Pace</string>
+    <string name="avgLapSL">Average Lap</string>
+    <string name="timeOfTheDaySL">Time of the day</string>
+    
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+
+    <string name="activeTime">Active Time</string>
+    <string name="kilometers">Kilometers</string>
+    
+    <string name="dateTime">Date &amp; Time</string>
+    <string name="watchFaces">Watch Faces</string>
+    <string name="watchFacesAndGadget">Faces &amp; Gadget</string>
+    <string name="watchAlarms">Watch Alarms</string>
+    <string name="siri">SIRI - Voice Command</string>
+    <string name="gestureControl">Gesture Control</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="settings">Settings</string>
+    <string name="syncNow">Sync Now</string>
+    <string name="lastSync">Last Sync: </string>
+    <string name="bettaryLife">Bettary Life</string>
+    <string name="samplePercentage">67%</string>
+    <string name="firmwareVersion">Firmware Version</string>
+    <string name="firmwareVersionSample">1.0.0.1</string>
+    <string name="version">Version</string>
+    
+    <string name="fbFriends">FB Friends</string>
+    <string name="rankings">Rankings</string>
+    <string name="inviteMoreFriends">Invite More Friends</string>
+    <string name="sampleName">Alan Turing</string>
+    <string name="sampleLocation">Redmond, WA</string>
+    
+    
+    <string name="memory">Memory</string>
+    <string name="os">OS</string>
+    <string name="watchGadget">Watch Gadget</string>
+    <string name="freeSpace">Free Space</string>
+    
+    <string name="sensors">Sensors</string>
+    <string name="gps">GPS</string>
+    <string name="gpsInfo">GPS Info</string>
+    <string name="ant">ANT</string>
+    <string name="cadence">Cadence</string>
+    <string name="systemSensor">System Sensor</string>
+    <string name="gyro">Gyro</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="disconnected">Disconnected</string>
+    
+    <string name="utc">UTC</string>
+    <string name="local">Local</string>
+    <string name="lat">Lat</string>
+    <string name="lon">Lon</string>
+    <string name="alt">ALT</string>
+    <string name="spd">SPD</string>
+    <string name="signalStrength">Signal Strength</string>
+    
+    <string name="timeZone">Time Zone</string>
+    <string name="setAutomatically">Set Automatically</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    
+    <string name="analog">Analog</string>
+    <string name="digital">Digital</string>
+    <string name="analogFaces">Analog Faces</string>
+    <string name="uploadToWatch">Upload to Watch</string>
+    
+    <string name="upgradeNow">Upgrade Now</string>
+    <string name="connectedDevices">Connected Devices</string>
+    <string name="deviceSettings">Device Settings</string>
+    <string name="backgroundSync">Background Sync</string>
+    <string name="forceSync">Force Sync</string>
+    
+    <string name="enableAlarm">Enable Alarm</string>
+    <string name="alarm">Alarm</string>
+    <string name="alarm1">Alarm</string>
+    <string name="alarm2">Alarm</string>
+    <string name="alarm3">Alarm</string>
+    <string name="alarmMode">Mode</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="repeatOnce">Repeat Once</string>
+    <string name="everyday">Everyday</string>
+    <string name="weekly">Weekly</string>
+    <string name="hourly">Hourly</string>
+    <string name="syncToWatch">Sync to Watch</string>
+    <string name="sound">Sound</string>
+    
+    <string name="gestures">Gestures</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="tutorialSpec">It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair</string>
+    <string name="gestureName">Gestures</string>
+    <string name="gestureSpec">We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.</string>
+    
+    <string name="aboutKreyos">About Kreyos</string>
+    
+    <string name="backToSettings">&lt; Settings</string>
+    <string name="backToMore">&lt; More</string>
+    <string name="device">Device</string>
+    <string name="deviceList">Device List</string>
+    <string name="conntectSaveDevice">Connect &amp; Save Device</string>
+    <string name="refreshDevices">Refresh Devices</string>
+    
+    <string name="watchTimeDate">Watch\nTime &amp; Date</string>
+    <string name="currentBatteryLife">Current\nBattery Life</string>
+    <string name="watchMemory">Watch\nMemory</string>
+    <string name="watchOSVersion">Watch\nOS Version</string>
+    <string name="currentWatchGadget">Current\nWatch Gadget</string>
+    
+    <string name="watchDateTime">Watch Date &amp; Time</string>
+    <string name="phoneDateTime">Phone Date &amp; Time</string>
+    
+    <string name="userProfile">User Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="socialAccounts">Social Accounts</string>
+    <string name="devices">Devices</string>
+    <string name="measurements">Measurements</string>
+    <string name="support">Support</string>
+    <string name="about">About</string>
+    <string name="logOut">Log Out</string>
+    <string name="lbs">LBS</string>
+    
+    <string name="measurementsSpec">height, length,\nweight, distance</string>
+    <string name="metric">Metric</string>
+    <string name="british">British</string>
+    
+    <string name="mm">MM</string>
+    <string name="dd">DD</string>
+    <string name="yyyy">YYYY</string>
+    <string name="hyphen">-</string>
+    
+    <string name="title">Title</string>
+    <string name="loggedInAs">Logged in as</string>
+    <string name="loggedInAsSample">wingforce@gmail.com</string>
+    
+    <string name="general">User Profile</string>
+    <string name="importFromFacebook">Import from Facebook</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="birthday">BirthDay</string>
+    <string name="gender">Gender</string>
+    <string name="location">Location</string>
+    <string name="weight">Weight</string>
+    <string name="cloudSyncID">Cloud Sync ID:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="connectAccount">Connect Account</string>
+    
+    <string name="syncingYourKreyos">Syncing Your Kreyos</string>
+    <string name="pairingWithBluetooth">Pairing with Bluetooth</string>
+    <string name="usingYourKreyos">Using Your Kreyos</string>
+    <string name="aboutOurMetrics">About Our Metrcs</string>
+    <string name="aboutThisApp">About This App</string>
+    
+    <string name="syncingYourKreyosDetail">When you sync wirelessly to these select smartphones, you can see your stats updated, set a goal, and track your progress with our free KREYOS App. Because you are syncing wherever you are, you can also receive notifications on your phone when you are close to your goals to keep you motivated and, when you meet your goals, celebrate your achievements.</string>
+    <string name="pairingWithBluetoothDetail">Make sure that the Bluetooth on your iOS/Android device is turned on in your settings. Then "Search for Devices" and select your Kreyos Meteor when it appears.</string>
+    <string name="usingYourKreyosDetail">Kreyos Meteor tracks your daily:\n\n\n\n\nSteps taken\n\nDistance traveled\n\nCalories burned\n\n\n\n\nYou can set a daily goal with Flex, and see how close you are to achieving that goal by checking your Meteor.</string>
+    <string name="aboutOurMetricsDetail">Your tracker and Dashboard show an estimated number of calories burned based on your BMR (Basal Metabolic Rate), which we calculate using the height, weight, age, and gender information you provided us with when you set up your KREYOS account.</string>
+    <string name="aboutThisAppDetail">With the KREYOS app, your stats will automatically sync to select smartphones wirelessly (nothing to plug in!). See how you are tracking against your daily goals, with friends, and against your historic averages. Bring fitness into your life seamlessly with the KREYOS App.</string>
+
+    <string name="paired">Paired</string>
+    <string name="unknown">Unknown</string>
+    
+    <string name="swap">SWAP</string>
+    <string name="phoneGrid">Phone\nGrid</string>
+    <string name="watchGrid">Watch\nGrid</string>
+    
+    <string name="selectSave">Select &amp; Save</string>
+    
+    <string name="allNotifications">All Notifications</string>    
+    <string name="incomerCallerID">Incoming Caller ID</string>
+    <string name="smsNotifications">SMS Notifications</string>
+    <string name="email">Email</string>
+    <string name="weatherAlerts">Weather Alerts</string>
+    <string name="calendarAlerts">Calendar Alerts</string>
+    <string name="reminderAlerts">Reminder Alerts</string>
+    <string name="phoneOutOfRange">Phone Out of Range</string>
+    <string name="lowBattery">Low Battery</string>
+    <string name="off">Off</string>
+    <string name="backToNotifications">Back to Notifications</string>
+
+    <string name="sampleLevel">LEVEL 8</string>
+    <string name="samplePtsToGo">1,230 Pts to Level 9</string>
+    <string name="sampleTotalPoints">1,829</string>
+    <string name="activeDays">ACTIVE DAYS</string>
+    <string name="badgesAchievements">BADGES &amp; ACHIEVEMENTS</string>
+    <string name="recordBook">RECORD BOOK</string>
+    <string name="bestDay">Best Day</string>
+    <string name="bestWeek">Best Week</string>
+    <string name="bestMonth">Best Month</string>
+    <string name="longestStreak">Longest Streak</string>
+    <string name="sampleAction">has reached</string>
+    
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="contacts">Contacts</string>
+    
+    <string name="setYourGesture">Set your gestures</string>
+    <string name="setYourGestureSpec">Below our four built-in gestures available to you to use with your Kreyos. Select an action to sync to your Kreyos Smartwatch. Once set, you can use these gestures to accomplish the selected action.</string>
+    
+    <string name="twistRight">Twist Right</string>
+    <string name="twistRightSpec">Twist your wrist from left to right to accomplish this gesture.</string>
+    <string name="twistLeft">Twist Left</string>
+    <string name="twistLeftSpec">Twist your wrist from right to left to accomplish this gesture.</string>
+    <string name="swipeRight">Swipe Right</string>
+    <string name="swipeRightSpec">Swipe your arm from left to right to accomplish this gesture.</string>
+    <string name="swipeLeft">Swipe Left</string>
+    <string name="swipeLeftSpec">Swipe your arm from right to left to accomplish this gesture.</string>
+    
+    <string name="aboutDetail">The Kreyos Meteor is one of the first interactive smartwatch that lets you use voice and gestures to control the functions you love on your smartphone – on your smartwatch!  The Kreyos Meteor is a hands-free, two-way communication system that you wear on your wrist. On your belt.  On your bike. Or even on a lanyard around your neck.</string>
+
+    <string name="setLocation">Set Location</string>
+    <string name="triggerOnWeatherChange">Trigger on weather change</string>
+    <string name="addLocation">Add Location</string>
+    
+    
+    <string name="update">Update</string>
+    <string name="loginass">Log in as:</string>
+    
+	<string name="app_id">243672019116075</string>
+	<string name="alreadyhave">I already have a Kreyos account</string>
+	
+	<string name="dateTimeList">DATE &amp; TIME</string>
+
+	<string-array name="gesture_array">
+	    <item>Select Gesture Action</item> 
+	   	<item>Music Control - Next Song</item> 
+		<item>Music Control - Previous Song</item>
+		<item>Music Control - Play/Pause</item>
+		<item>Music Control - Volume Up</item>
+		<item>Music Control - Volume Down</item>
+		<item>Phone: Pick Up</item>
+		<item>Phone: Reject</item>
+    </string-array> 
+    
+	<string name="action_settings">Action Settings</string>
+
+    
+    
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+    
+   
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+</resources>

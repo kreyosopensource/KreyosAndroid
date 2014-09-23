@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|top"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnBackToSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/textViewBTStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTAgent:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewWatchFWVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch FW Ver:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewFWVersionURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FWVER" />
+
+        <EditText
+            android:id="@+id/editTextFWVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewFwURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FWURL:" />
+
+        <EditText
+            android:id="@+id/editTextFileURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUploadFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up" />
+
+    <TextView
+        android:id="@+id/textViewSportsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports Data Sync:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonSyncSportsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync Sports Data" />
+
+    <TextView
+        android:id="@+id/textViewSportsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdfsf" />
+
+</LinearLayout>

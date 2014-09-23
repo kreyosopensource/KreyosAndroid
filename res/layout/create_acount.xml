@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg" >
+
+    <ImageView
+        android:id="@+id/create_account_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/nav_logo" />
+
+     <EditText
+         android:id="@+id/create_account_firstname"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_account_logo"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="50dp"
+         android:layout_weight="1.0"
+         android:background="@drawable/bg_corner_border_white"
+         android:editable="true"
+         android:ems="10"
+         android:gravity="center_vertical"
+         android:hint="FIRST NAME"
+         android:paddingLeft="20dp"
+         android:textSize="25sp" >
+
+         <requestFocus />
+     </EditText>
+     
+     <EditText
+         android:id="@+id/create_account_lastname"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_account_firstname"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="5dp"
+         android:layout_weight="1.0"
+         android:background="@drawable/bg_corner_border_white"
+         android:editable="true"
+         android:ems="10"
+         android:hint="LAST NAME"
+         android:paddingLeft="20dp"
+         android:textSize="25sp" >
+
+     </EditText>
+
+     <TextView
+         android:id="@+id/create_account_birthday_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@id/create_account_lastname"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="50dp"
+         android:layout_marginTop="15dp"
+         android:text="BIRTHDAY:"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/create_account_birthday_value"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/create_account_lastname"
+         android:layout_marginLeft="180dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/bg_corner_white"
+         android:gravity="center"
+         android:hint="mm/dd/yy"
+         android:textSize="25sp" />
+     
+     <TextView
+         android:id="@+id/create_account_gender_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@id/create_account_birthday_label"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="50dp"
+         android:layout_marginTop="20dp"
+         android:text="GENDER:"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/create_account_gender_female"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_account_birthday_value"
+         android:layout_marginLeft="255dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/bg_right_rounded_border_white"
+         android:gravity="center"
+         android:hint="Female"
+         android:textSize="25sp" />
+     
+     <TextView
+         android:id="@+id/create_account_gender_male"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_account_birthday_value"
+         android:layout_marginLeft="175dp"
+         android:layout_marginRight="105dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/bg_left_rounded_border_white"
+         android:gravity="center"
+         android:hint="Male"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/create_account_weight_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/create_account_gender_label"
+         android:layout_below="@+id/create_account_gender_male"
+         android:layout_marginTop="15dp"
+         android:text="WEIGHT:"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/create_account_weight_value"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_account_gender_male"
+         android:layout_marginLeft="180dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/bg_corner_white"
+         android:gravity="center"
+         android:hint="0 lbs."
+         android:textSize="25sp" />
+     
+     <TextView
+         android:id="@+id/create_account_height_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/create_account_gender_label"
+         android:layout_below="@+id/create_account_weight_label"
+         android:layout_marginTop="20dp"
+         android:text="HEIGHT:"
+         android:textSize="25sp" />
+     
+     <TextView
+         android:id="@+id/create_account_height_value_ft"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_account_weight_value"
+         android:layout_marginLeft="175dp"
+         android:layout_marginRight="105dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/bg_left_rounded_border_white"
+         android:gravity="center"
+         android:hint="0 ft."
+         android:textSize="25sp" />
+     
+      <TextView
+          android:id="@+id/create_account_height_value_in"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_below="@id/create_account_weight_value"
+          android:layout_marginLeft="255dp"
+          android:layout_marginRight="30dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/bg_right_rounded_border_white"
+          android:gravity="center"
+          android:hint="0 In."
+          android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/create_account_btn_create"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/create_account_height_value_ft"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="15dp"
+         android:background="@color/dark"
+         android:text="CREATE AN ACCOUNT"
+         android:textColor="@color/white" />
+     
+</RelativeLayout>

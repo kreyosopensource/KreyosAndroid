@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_one"
+        android:title="ACTIVE WATCH">
+    </item>
+    <item
+        android:id="@+id/item_two"
+        android:title="DATE &amp; TIME">
+    </item>
+    <item
+        android:id="@+id/item_three"
+        android:title="SILENT ALARMS">
+    </item>
+    <item
+        android:id="@+id/item_four"
+        android:title="UPDATE FIRMWARE">
+    </item>
+    <item
+        android:id="@+id/item_five"
+        android:title="PERSONAL INFORMATION">
+    </item>
+     <item
+        android:id="@+id/item_six"
+        android:title="SETUP WATCH">
+    </item>
+<!--     <item -->
+<!--         android:id="@+id/item_seven" -->
+<!--         android:title="LOGOUT"> -->
+<!--     </item> -->
+</menu>

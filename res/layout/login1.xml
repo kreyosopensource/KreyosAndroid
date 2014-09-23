@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbg" >
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo_kreyos_white" />
+
+        <LinearLayout
+            android:id="@+id/layout_login_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/txt_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_email_2x"
+                android:ems="10"
+                android:hint="Email/Kreyos ID"
+                android:inputType="textEmailAddress" >
+
+                <requestFocus />
+            </EditText>
+
+             <EditText
+                 android:id="@+id/txt_login_pasword"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:background="@color/white"
+                 android:drawableLeft="@drawable/icon_password_2x"
+                 android:ems="10"
+                 android:hint="Password"
+                 android:inputType="textPassword" >
+
+            </EditText>
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layout_login_fields"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_deepblue_button"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_login_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="OR"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<!--         <Button -->
+<!--             android:id="@+id/btn_fb_login" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@id/txt_login_or" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_marginLeft="50dp" -->
+<!--             android:layout_marginRight="50dp" -->
+<!--             android:background="#3A5998" -->
+<!--             android:text="Log in with Facebook" -->
+<!--             android:textColor="@color/white" /> -->
+
+			<com.facebook.widget.LoginButton
+			    android:id="@+id/btn_fb_login"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/txt_login_or"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginLeft="50dp"
+			    android:layout_marginRight="50dp"
+			    android:text="Login with Facebook" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/createidbar" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="#2D4F54" >
+
+                    <TextView
+                        android:id="@+id/txt_create_account_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/icon_newaccount_2x"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:background="#4F929A" >
+
+                    <TextView
+                        android:id="@+id/txt_create_account_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="No Kreyos ID yet? Create an account here"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

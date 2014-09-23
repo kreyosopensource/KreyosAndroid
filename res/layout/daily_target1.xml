@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    <!-- 03-21-2014
+    	 Replace "SlideMenu" to "SlidingMenu"
+    	 To activate left and right animation -->
+    <com.kreyos.watch.SlidingMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <!-- Replace "SlideMenu" to "SlidingMenu"
+    	 To activate left and right animation -->
+    <com.kreyos.watch.SlidingMenu
+        android:id="@+id/slideMenu_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.kreyos.watch.SlidingMenu>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/header_blue" >
+
+        <TextView
+            android:id="@+id/textView_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="DAILY TARGET"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/imageView_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_menu1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/watch" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/daily_target_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.4"
+                android:src="@drawable/daily_steps_badge" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="SET YOUR DAILY STEPS GOAL"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:overScrollMode="never" >
+            </android.support.v4.view.ViewPager>
+
+            <Button
+                android:id="@+id/btn_update_daily_target"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/default_button"
+                android:text="UPDATE YOUR GOAL"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>
