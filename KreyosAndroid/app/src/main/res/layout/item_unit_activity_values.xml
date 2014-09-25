@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    OVERALL ACTIVITIES (unit activity values)
+    created by: karla
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- leftmost container -->
+    <LinearLayout
+        android:id="@+id/container_icon_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_icon_activity"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:src="@drawable/frag2_ic_activity" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/fragmentL2_text_time" />
+    </LinearLayout>
+
+    <!-- divider -->
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/container_icon_and_time"
+        android:contentDescription="@string/description"
+        android:src="@drawable/frag2_div_transparent_bar" />
+
+    <!-- "THAT'S FANTASTIC" text -->
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/container_icon_and_time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@color/text_goldenrod"
+        android:text="@string/fragmentL2_title_fantastic"/>
+
+    <!-- Scroll -->
+    <HorizontalScrollView
+        android:id="@+id/scrollview_unit_activity_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divider"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/label_title"
+        android:fadeScrollbars="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp" >
+
+            <!-- STEPS -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_steps"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_steps"/>
+
+                <TextView
+                    android:id="@+id/text_value_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+            </LinearLayout>
+
+            <!-- DISTANCE -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_distance"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_distance" />
+
+                <TextView
+                    android:id="@+id/text_value_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_unit_distance" />
+            </LinearLayout>
+
+            <!-- CALORIES -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_distance"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_calories" />
+
+                <TextView
+                    android:id="@+id/text_value_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+
+                <TextView
+                    android:id="@+id/TextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_unit_calories" />
+            </LinearLayout>
+
+            <!-- SPEED -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_speed"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_speed" />
+
+                <TextView
+                    android:id="@+id/text_value_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_unit_speed" />
+            </LinearLayout>
+
+            <!-- AVERAGE SPEED -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_speed"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_average_speed" />
+
+                <TextView
+                    android:id="@+id/text_value_average_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_unit_speed" />
+            </LinearLayout>
+
+            <!-- TOP SPEED -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/frag2_ic_speed"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_label_top_speed" />
+
+                <TextView
+                    android:id="@+id/text_value_top_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_value_0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/fragmentL2_text_unit_speed" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

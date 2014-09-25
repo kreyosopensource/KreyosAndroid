@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_right_one"
+        android:title="@string/fragmentR1_header">
+    </item>
+    <item
+        android:id="@+id/item_right_two"
+        android:title="@string/fragmentR2_header">
+    </item>
+    <item
+        android:id="@+id/item_right_three"
+        android:title="@string/fragmentR3_header">
+    </item>
+    <item
+        android:id="@+id/item_right_four"
+        android:title="@string/fragmentR4_header">
+    </item>
+    <item
+        android:id="@+id/item_right_five"
+        android:title="@string/fragmentR5_header">
+    </item>
+     <item
+        android:id="@+id/item_right_six"
+        android:title="@string/fragmentR6_header">
+    </item>
+    <item
+        android:id="@+id/item_right_seven"
+        android:title="@string/fragmentR7_header">
+    </item>
+</menu>

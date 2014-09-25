@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    LOGIN ACTIVITY
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:contentDescription="@string/description"
+        android:src="@drawable/logo_kreyos_white" />
+
+    <!-- fragment holder -->
+    <FrameLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+    </FrameLayout>
+
+    <!-- 'Create an account' holder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false" >
+
+        <!-- icon -->
+        <RelativeLayout
+            android:id="@+id/layout_btn_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/bg_dark_slate_gray" >
+
+            <TextView
+                android:id="@+id/btn_icon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/login_icon_new_acct"
+                android:textColor="@color/text_white" />
+        </RelativeLayout>
+
+        <!-- message -->
+        <RelativeLayout
+            android:id="@+id/layout_btn_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:background="@color/bg_cadet_blue" >
+
+            <TextView
+                android:id="@+id/btn_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/actlogin_text_create_acct"
+                android:textColor="@color/text_white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

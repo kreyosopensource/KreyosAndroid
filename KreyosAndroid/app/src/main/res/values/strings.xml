@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Required -->
+    <string name="app_name">KreyosAndroid</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="app_id">351545831658267</string>
+    <string name="shared_preferences">ANDROIDPREFS</string>
+
+    <!-- Global strings -->
+    <string name="description">Default Description</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="dialog_title_error_connection">Connection Problem</string>
+    <string name="dialog_title_logout">Logout</string>
+    <string name="dialog_title_device_not_found">Device not found</string>
+    <string name="dialog_title_update_watch">Update Watch</string>
+    <string name="dialog_title_disconnect_watch">Disconnect Watch</string>
+
+    <string name="dialog_msg_error_connection">Whoops! It seems you aren\'t connected to the Internet yet.</string>
+    <string name="dialog_msg_please_wait">Please wait&#8230;</string>
+    <string name="dialog_msg_logout_successful">You\'ve successfully logged out.</string>
+    <string name="dialog_msg_connect_watch">Please connect your Kreyos Watch.</string>
+    <string name="dialog_msg_watch_updated">Your watch is updated!</string>
+    <string name="dialog_msg_update_api">Please update to API 4.3 to use selected notifications.</string>
+    <string name="dialog_msg_error_file_create">Can\'t create local file to store user data.</string>
+
+    <string name="dialog_msg_info_updated">Your profile information is now updated.</string>
+    <string name="dialog_msg_error_info_update">There\'s an error updating your account!</string>
+
+    <string name="dialog_btn_ok">OK</string>
+
+        <!-- Height & Weight dialog -->
+        <string name="dialog_title_set_weight">Set Weight</string>
+        <string name="dialog_title_set_height">Set Height</string>
+        <string name="dialog_btn_done">Done</string>
+
+
+    <!-- Login Activity -->
+    <string name="actlogin_text_create_acct">NO KREYOS ID YET? CREATE AN ACCOUNT HERE</string>
+    <string name="actlogin_text_login_here">ALREADY HAVE A KREYOS ID? LOGIN HERE</string>
+    <string name="actlogin_text_email_hint">EMAIL/KREYOS ID</string>
+    <string name="actlogin_text_pw_hint">PASSWORD</string>
+    <string name="actlogin_text_confirm_pw_hint">CONFIRM PASSWORD</string>
+
+    <string name="actlogin_dialog_title_login">Login</string>
+    <string name="actlogin_dialog_title_create_account">Create Account</string>
+    <string name="actlogin_dialog_title_facebook_login">Facebook Login</string>
+
+    <string name="actlogin_dialog_msg_error_fill_out">Please fill out all fields.</string>
+    <string name="actlogin_dialog_msg_error_invalid_email">Email entered is not valid.</string>
+    <string name="actlogin_dialog_msg_error_passwords_mismatch">Password didn\'t matched.</string>
+    <string name="actlogin_dialog_msg_error_short_password">Password is too short (minimum is 8 characters).</string>
+    <string name="actlogin_dialog_msg_error_create_acct">There\'s an error creating an account!</string>
+
+    <string name="actlogin_btn_login">LOGIN</string>
+    <string name="actlogin_btn_login_fb">Login with Facebook</string>
+    <string name="actlogin_text_or">OR</string>
+    <string name="actlogin_btn_signup_next">NEXT</string>
+    <string name="actlogin_btn_signup_done">DONE</string>
+    <string name="actlogin_text_first_name">FIRST NAME</string>
+    <string name="actlogin_text_last_name">LAST NAME</string>
+    <string name="actlogin_label_birthday">BIRTHDAY:</string>
+    <string name="actlogin_label_gender">GENDER:</string>
+    <string name="actlogin_label_height">HEIGHT:</string>
+    <string name="actlogin_label_weight">WEIGHT:</string>
+    <string name="actlogin_val_birthday">MM/DD/YYYY</string>
+    <string name="actlogin_val_gender_m">MALE</string>
+    <string name="actlogin_val_gender_f">FEMALE</string>
+    <string name="actlogin_val_height_feet">0 Ft.</string>
+    <string name="actlogin_val_height_in">0 In.</string>
+    <string name="actlogin_val_weight">0 Lbs.</string>
+
+    <!-- Main Activity -->
+    <string name="actmain_header">HOME</string>
+
+    <!-- Fragment Left 1 -->
+    <string name="fragmentL1_header">HOME</string>
+    <string name="fragmentL1_msg_get_stay_active">GET ACTIVE. STAY ACTIVE.</string>
+    <string name="fragmentL1_btn_pick_target">PICK A DAILY TARGET</string>
+    <string name="fragmentL1_btn_overall_activities">OVERALL ACTIVITIES</string>
+    <string name="alert_avatar_title">Profile Image</string>
+    <string name="alert_avatar_msg">Select from:</string>
+    <string name="alert_avatar_btn_pos">Capture Image</string>
+    <string name="alert_avatar_btn_neg">Choose From Gallery</string>
+
+    <!-- Fragment Left 2 -->
+    <string name="fragmentL2_header">OVERALL ACTIVITIES</string>
+    <string name="fragmentL2_text_time">00:00</string>
+    <string name="fragmentL2_title_fantastic">THAT\'S FANTASTIC!</string>
+    <string name="fragmentL2_text_day_of_the_week">Wed</string>
+    <string name="fragmentL2_text_date">Aug 20 2014</string>
+    <string name="fragmentL2_text_value_0">0</string>
+    <string name="fragmentL2_label_steps">STEPS</string>
+    <string name="fragmentL2_label_distance">DISTANCE</string>
+    <string name="fragmentL2_label_calories">CALORIES</string>
+    <string name="fragmentL2_label_speed">SPEED</string>
+    <string name="fragmentL2_label_average_speed">AVE. SPEED</string>
+    <string name="fragmentL2_label_top_speed">TOP SPEED</string>
+    <string name="fragmentL2_text_unit_distance">KM</string>
+    <string name="fragmentL2_text_unit_calories">CAL</string>
+    <string name="fragmentL2_text_unit_speed">M/S</string>
+
+    <string name="fragmentL2_dialog_title_activities_update">Activities Update</string>
+    <string name="fragmentL2_dialog_msg_synching_activity_data">Syncing Activity Data&#8230;</string>
+
+
+    <!-- Fragment Left 3 -->
+    <string name="fragmentL3_header">SPORTS MODE</string>
+    <string name="fragmentL3_text_timer">00:00:00</string>
+    <string name="fragmentL3_text_defval">0.0</string>
+    <string name="fragmentL3_text_defval_0">0</string>
+    <string name="fragmentL3_add">+</string>
+    <string name="fragmentL3_label_heartrate">HEART RATE</string>
+    <string name="fragmentL3_text_unit_heartrate">BPM</string>
+    <string name="fragmentL3_label_distance">DISTANCE</string>
+    <string name="fragmentL3_text_unit_distance">M</string>
+    <string name="fragmentL3_label_steps">STEPS</string>
+    <string name="fragmentL3_text_unit_steps">STEPS</string>
+    <string name="fragmentL3_label_speed">SPEED</string>
+    <string name="fragmentL3_text_unit_speed">KPH</string>
+    <string name="fragmentL3_label_cal">CALORIES</string>
+    <string name="fragmentL3_text_unit_cal">CAL</string>
+    <string name="fragmentL3_label_cadence">CADENCE</string>
+    <string name="fragmentL3_text_unit_cadence">CPM</string>
+
+    <!-- Fragment Left 4 -->
+    <string name="fragmentL4_header">DAILY TARGET</string>
+    <string name="fragmentL4_msg_set_goal">SET YOUR DAILY STEPS GOAL</string>
+    <string name="fragmentL4_btn_update_goal">UPDATE YOUR GOAL</string>
+    <string name="fragmentL4_text_slider">DAILY</string>
+
+    <!-- Fragment Left 5: -->
+    <string name="fragmentL5_header">SETTINGS</string>
+    <string name="fragmentL5_text_incomer_caller_id">Incoming Caller ID</string>
+    <string name="fragmentL5_text_weather_alerts">Weather Alerts</string>
+    <string name="fragmentL5_text_sms_notifs">SMS Notifications</string>
+    <string name="fragmentL5_text_email">Email</string>
+    <string name="fragmentL5_text_facebook">Facebook</string>
+    <string name="fragmentL5_text_twitter">Twitter</string>
+    <string name="fragmentL5_text_reminder_alerts">Reminder Alerts</string>
+    <string name="fragmentL5_text_phone_out_of_range">Phone Out of Range</string>
+    <string name="fragmentL5_text_low_battery">Low Battery</string>
+
+    <!-- Fragment Right 1: -->
+    <string name="fragmentR1_header">ACTIVE WATCH</string>
+    <string name="fragmentR1_msg_connected_device">Connected: Meteor 5971</string>
+    <string name="fragmentR1_btn_connect_device">CONNECT DEVICE</string>
+    <string name="fragmentR1_btn_disconnect_device">DISCONNECT DEVICE</string>
+
+    <!-- Fragment Right 2: -->
+    <string name="fragmentR2_header">DATE &amp; TIME</string>
+    <string name="fragmentR2_text_auto_set">SET AUTOMATICALLY</string>
+    <string name="fragmentR2_text_date">AUG 20 2014</string>
+    <string name="fragmentR2_text_time">1:15AM</string>
+    <string name="fragmentR2_btn_update_watch">UPDATE WATCH</string>
+
+    <!-- Fragment Right 3: -->
+    <string name="fragmentR3_header">SILENT ALARMS</string>
+    <string name="fragmentR3_text_enable">Enable</string>
+    <string name="fragmentR3_text_start_time">00:00:00</string>
+    <string name="fragmentR3_text_repeat_once">Repeat Once</string>
+    <string name="fragmentR3_text_alarm1">ALARM 1</string>
+    <string name="fragmentR3_text_alarm2">ALARM 2</string>
+    <string name="fragmentR3_text_alarm3">ALARM 3</string>
+    <string name="fragmentR3_btn_update_watch">UPDATE WATCH</string>
+
+    <!-- Fragment Right 4: -->
+    <string name="fragmentR4_header">UPDATE FIRMWARE</string>
+    <string name="fragmentR4_text_your_meteor_works_best">YOUR METEOR WORKS BEST WHEN RUNNING ON THE LATEST SOFTWARE.</string>
+    <string name="fragmentR4_text_current_ver">CURRENT VERSION:</string>
+    <string name="fragmentR4_text_update_your_meteor">UPDATE YOUR METEOR</string>
+
+    <!-- Fragment Right 5: -->
+    <string name="fragmentR5_header">PERSONAL INFORMATION</string>
+    <string name="fragmentR5_btn_import_to_fb">IMPORT FROM FACEBOOK</string>
+    <string name="fragmentR5_text_first_name">FIRST NAME</string>
+    <string name="fragmentR5_text_last_name">LAST NAME</string>
+    <string name="fragmentR5_label_birthday">BIRTHDAY:</string>
+    <string name="fragmentR5_label_gender">GENDER:</string>
+    <string name="fragmentR5_label_height">HEIGHT:</string>
+    <string name="fragmentR5_label_weight">WEIGHT:</string>
+    <string name="fragmentR5_val_birthday">MM/DD/YYYY</string>
+    <string name="fragmentR5_val_gender_m">MALE</string>
+    <string name="fragmentR5_val_gender_f">FEMALE</string>
+    <string name="fragmentR5_val_height_feet">0 Ft.</string>
+    <string name="fragmentR5_val_height_in">0 In.</string>
+    <string name="fragmentR5_val_weight">0 Lbs.</string>
+    <string name="fragmentR5_btn_update_my_info">UPDATE MY INFORMATION</string>
+
+    <!-- Fragment Right 6: -->
+    <string name="fragmentR6_header">SETUP WATCH</string>
+
+    <!-- Fragment Right 7: -->
+    <string name="fragmentR7_header">LOGOUT</string>
+
+    <!-- Setup Watch Activity -->
+    <string name="actsetup_header_turn_meteor_on">TURN YOUR METEOR ON</string>
+    <string name="actsetup_btn_skip">SKIP</string>
+    <string name="actsetup_scr1_msg1">THE INITIALIZATION SCREEN BELOW IS DISPLAYED ON YOUR METEOR. IF IT ISN\'T, MAKE SURE YOUR METEOR IS CONNECTED TO A POWER SOURCE THROUGH USB AND WAIT FOR A FEW MINUTES.</string>
+    <string name="actsetup_scr1_msg2">IF IT ISN\'T, MAKE SURE YOUR METEOR IS CONNECTED TO A POWER SOURCE THROUGH USB AND WAIT FOR A FEW MINUTES.</string>
+    <string name="actsetup_scr1_msg3">Tap \'NEXT\' below once your meteor is on.</string>
+
+
+    <!-- Bluetooth -->
+    <string name="search_again">Search Again</string>
+    <string name="connect_meteor">Connect your Meteor Watch</string>
+    <string name="search_cancel">Cancel</string>
+
+</resources>

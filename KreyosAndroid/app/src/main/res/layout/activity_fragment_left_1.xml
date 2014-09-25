@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    TODAY'S ACTIVITY
+    created by: karla
+-->
+
+<!--
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    is for the AutoResizeTextView's custom attribute
+ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/bg_blue">
+
+    <!-- Default avatar -->
+    <com.kreyos.kreyosandroid.utilities.CircularImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_defphoto"/>
+
+    <!-- "Get Active. Stay Active" text -->
+    <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+        android:id="@+id/msg_get_stay_active"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:text="@string/fragmentL1_msg_get_stay_active"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:customFont="FONT_LEAGUE_GOTHIC_REGULAR"/> <!-- custom attribute -->
+
+    <!-- Progress bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2" >
+
+        <com.kreyos.kreyosandroid.utilities.CircularProgressbar
+            android:id="@+id/progbar_circle_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!-- "Pick Daily Target" button -->
+    <Button
+        android:id="@+id/btn_set_daily_target"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.4"
+        android:background="#000000"
+        android:text="@string/fragmentL1_btn_pick_target"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

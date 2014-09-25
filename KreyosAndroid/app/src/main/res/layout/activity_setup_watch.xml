@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TUTORIAL -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/bg_blue">
+
+            <!-- tutorial header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/actsetup_header_turn_meteor_on"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Fragment holder -->
+        <LinearLayout
+            android:id="@+id/contentFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:background="@drawable/bg_firmware_tutorial"
+            android:orientation="vertical"
+            android:scaleType="fitXY">
+
+            <!-- text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" >
+
+                <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:ellipsize="none"
+                    android:maxLines="10"
+                    android:text="@string/actsetup_scr1_msg1"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_white"
+                    app:customFont="FONT_LEAGUE_GOTHIC_REGULAR"/> <!-- custom attribute -->
+
+            </LinearLayout>
+
+            <!-- Images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.8"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/setupwatch_watch_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="120dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_light_gray"
+                    android:text="@string/actsetup_scr1_msg3"/>
+
+            </LinearLayout>
+
+            <!-- button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_customstate_blue"
+                    android:onClick="btnBackToMainActivity"
+                    android:text="NEXT"
+                    android:textColor="@color/text_white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- skip button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                    android:id="@+id/btn_scr1_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="15dp"
+                    android:ellipsize="none"
+                    android:maxLines="1"
+                    android:onClick="btnBackToMainActivity"
+                    android:text="@string/actsetup_btn_skip"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="40sp"
+                    android:textColor="@color/text_white"
+                    app:customFont="FONT_LEAGUE_GOTHIC_REGULAR"/> <!-- custom attribute -->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_left_one"
+        android:icon="@drawable/sidebar_ic_home"
+        android:title="@string/fragmentL1_header">
+    </item>
+    <item
+        android:id="@+id/item_left_two"
+        android:icon="@drawable/sidebar_ic_overallactivities"
+        android:title="@string/fragmentL2_header">
+    </item>
+    <item
+        android:id="@+id/item_left_three"
+        android:icon="@drawable/sidebar_ic_sportsmode"
+        android:title="@string/fragmentL3_header">
+    </item>
+    <item
+        android:id="@+id/item_left_four"
+        android:icon="@drawable/sidebar_ic_dailytarget"
+        android:title="@string/fragmentL4_header">
+    </item>
+    <item
+        android:id="@+id/item_left_five"
+        android:icon="@drawable/sidebar_ic_settings"
+        android:title="@string/fragmentL5_header">
+    </item>
+
+</menu>
+
+

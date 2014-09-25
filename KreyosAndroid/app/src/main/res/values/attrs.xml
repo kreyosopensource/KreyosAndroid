@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+        declare-styleable tag - lets android know what it is we want to add our attributes to (the Java class name).
+
+        Custom Attributes:
+
+        name= attribute name
+        format= is the type of attribute (data type)
+            ( string, integer, float, dimension, boolean, float, resource, enum, and color )
+    -->
+
+<resources>
+
+    <attr name="customFont" format="enum">
+        <enum name="FONT_LEAGUE_GOTHIC_REGULAR"              value="0"/>
+        <enum name="FONT_LEAGUE_GOTHIC_ITALIC"               value="1"/>
+        <enum name="FONT_LEAGUE_GOTHIC_CONDENSED_REGULAR"    value="2"/>
+        <enum name="FONT_LEAGUE_GOTHIC_CONDENSED_ITALIC"     value="3"/>
+    </attr>
+
+	<declare-styleable name="AutoResizeTextView">
+		<attr name="customFont"/>
+	</declare-styleable>
+</resources>

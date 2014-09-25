@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    SILENT ALARMS
+    created by: karla
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:scaleType="fitXY" >
+
+    <!-- ALARMS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/corner_bgwhite_stklightgray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- ________________________ Alarm 1 ________________________ -->
+        <RelativeLayout
+            android:id="@+id/layout_alarm_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_label_alarm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fragmentR3_text_alarm1"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/btn_config_alarm_1"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_nav_right" />
+
+            <TextView
+                android:id="@+id/text_time_alarm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btn_config_alarm_1"
+                android:text="@string/fragmentR3_text_start_time"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_mode_alarm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/text_time_alarm_1"
+                android:text="@string/fragmentR3_text_repeat_once"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/description"
+            android:background="@color/bg_light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_enable_alarm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/fragmentR3_text_enable"
+                android:textColor="@color/text_light_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/btn_switch_vibrate_alarm_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_img_switch_off" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/description"
+            android:background="@color/bg_light_gray" />
+
+
+        <!-- ________________________ Alarm 2 ________________________ -->
+        <RelativeLayout
+            android:id="@+id/layout_alarm_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_label_alarm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fragmentR3_text_alarm2"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/btn_config_alarm_2"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_nav_right" />
+
+            <TextView
+                android:id="@+id/text_time_alarm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btn_config_alarm_2"
+                android:text="@string/fragmentR3_text_start_time"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_mode_alarm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/text_time_alarm_2"
+                android:text="@string/fragmentR3_text_repeat_once"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/description"
+            android:background="@color/bg_light_gray" />
+
+        <RelativeLayout
+            android:id="@+id/layoutAutoSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_enable_alarm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/fragmentR3_text_enable"
+                android:textColor="@color/text_light_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/btn_switch_vibrate_alarm_2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_img_switch_off" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/description"
+            android:background="@color/bg_light_gray" />
+
+
+        <!-- ________________________ Alarm 3 ________________________ -->
+        <RelativeLayout
+            android:id="@+id/layout_alarm_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_label_alarm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fragmentR3_text_alarm3"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/btn_config_alarm_3"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_nav_right" />
+
+            <TextView
+                android:id="@+id/text_time_alarm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btn_config_alarm_3"
+                android:text="@string/fragmentR3_text_start_time"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_mode_alarm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/text_time_alarm_3"
+                android:text="@string/fragmentR3_text_repeat_once"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/description"
+            android:background="@color/bg_light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_enable_alarm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/fragmentR3_text_enable"
+                android:textColor="@color/text_light_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/btn_switch_vibrate_alarm_3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/btn_img_switch_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 'Update Watch' button -->
+    <Button
+        android:id="@+id/btn_update_watch_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_customstate_blue"
+        android:text="@string/fragmentR3_btn_update_watch"
+        android:textColor="@color/text_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

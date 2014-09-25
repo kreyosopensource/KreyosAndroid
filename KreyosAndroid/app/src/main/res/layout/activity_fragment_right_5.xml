@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    PERSONAL INFORMATION
+    created by: karla
+-->
+
+<!-- TODO: In Design tab, use API 19 for rendering EditText views -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/corner_bgwhite_stklightgray"
+        android:orientation="vertical" >
+
+        <!-- body -->
+
+
+            <!-- cell 1: image & name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <!-- Avatar -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/img_avatar_personalinfo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/img_defphoto" />
+
+                </RelativeLayout>
+
+                <!-- Edit Text -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/field_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/fragmentR5_text_first_name"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" >
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/field_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/field_first_name"
+                        android:hint="@string/fragmentR5_text_last_name"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- divider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_light_gray" >
+            </RelativeLayout>
+
+            <!-- Birthday -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.6"
+                    android:text="@string/fragmentR5_label_birthday"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/corner_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_birthday"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <!-- Gender -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/fragmentR5_label_gender"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_gender_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_left_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_gender_m"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_gender_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_right_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_gender_f"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <!-- Height -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/fragmentR5_label_height"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_height_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/corner_right_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_height_in"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_height_ft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/field_height_in"
+                    android:background="@drawable/corner_left_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_height_feet"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <!-- Weight -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/fragmentR5_label_weight"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/field_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/corner_bgwhite_stklightgray"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fragmentR5_val_weight"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <!-- Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/btn_update_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_customstate_blue"
+                    android:text="@string/fragmentR5_btn_update_my_info"
+                    android:textColor="@color/text_white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

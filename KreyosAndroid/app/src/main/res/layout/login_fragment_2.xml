@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    LOGIN 2
+    created by: karla
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- EditTexts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical" >
+
+        <!-- Email/ID -->
+        <EditText
+            android:id="@+id/field_email_create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@drawable/login_icon_email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_email_hint" >
+            <requestFocus />
+        </EditText>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/field_password_create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@drawable/login_icon_password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_pw_hint" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/field_password_conf_create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@drawable/login_icon_password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_confirm_pw_hint" />
+    </LinearLayout>
+
+    <!-- 'NEXT' button -->
+    <Button
+        android:id="@+id/btn_next_create_acct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_customstate_tealgray"
+        android:text="@string/actlogin_btn_signup_next"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

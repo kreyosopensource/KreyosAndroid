@@ -1,0 +1,89 @@
+
+<!--
+    MAIN ACTIVITY
+ -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusableInTouchMode="true"
+    android:background="@color/bg_blue">
+
+    <!-- Sliding Menu -->
+    <com.kreyos.kreyosandroid.others.SlidingMenu
+        android:id="@+id/slideMenu_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.kreyos.kreyosandroid.others.SlidingMenu
+        android:id="@+id/slideMenu_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/textView_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/bg_blue">
+
+            <!-- Left menu -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_slide_left"
+                android:layout_weight="0.4"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/mainact_btn_menu_left" />
+
+            <!-- HEADER -->
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:id="@+id/textView_title_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ellipsize="none"
+                android:maxLines="2"
+                android:text="@string/actmain_header"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                app:customFont="FONT_LEAGUE_GOTHIC_REGULAR"/> <!-- custom attribute -->
+
+            <!-- Right menu -->
+            <ImageView
+                android:id="@+id/imageView_slide_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.4"
+                android:contentDescription="@string/description"
+                android:src="@drawable/mainact_btn_watch_right" />
+        </LinearLayout>
+
+        <!-- Fragment holder -->
+        <FrameLayout
+            android:id="@+id/contentFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75" >
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

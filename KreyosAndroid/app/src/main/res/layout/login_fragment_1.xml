@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    LOGIN 1
+    created by: karla
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- EditTexts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/field_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@drawable/login_icon_email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_email_hint" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_white"
+            android:drawableLeft="@drawable/login_icon_password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_pw_hint"/>
+    </LinearLayout>
+
+    <!-- 'Login' button -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_customstate_green"
+        android:text="@string/actlogin_btn_login"
+        android:textSize="25sp"
+        android:textColor="@color/text_white"/>
+
+    <!-- 'OR' text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/actlogin_text_or"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Facebook button -->
+    <com.facebook.widget.LoginButton
+        android:id="@+id/btn_login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/actlogin_btn_login_fb" />
+
+</LinearLayout>

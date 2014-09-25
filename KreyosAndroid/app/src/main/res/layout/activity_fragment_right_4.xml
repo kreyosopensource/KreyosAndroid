@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    UPDATE FIRMWARE
+    created by: karla
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_firmware_tutorial"
+    android:orientation="vertical"
+    android:scaleType="fitXY" >
+
+    <!-- 'YOUR METEOR WORKS BEST WHEN RUNNING ON THE LATEST SOFTWARE' message -->
+    <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+        android:id="@+id/msg_works_best"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:ellipsize="none"
+        android:maxLines="2"
+        android:text="@string/fragmentR4_text_your_meteor_works_best"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_white"
+        android:textSize="28sp"
+        app:customFont="FONT_LEAGUE_GOTHIC_REGULAR"/> <!-- custom attribute -->
+
+    <!-- 'Current Version:' text -->
+    <TextView
+        android:id="@+id/txt_firmware_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/fragmentR4_text_current_ver"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_white" />
+
+    <!-- 'Update your meteor' button -->
+    <Button
+        android:id="@+id/btn_update_firmware"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_customstate_blue"
+        android:text="@string/fragmentR4_text_update_your_meteor"
+        android:textColor="@color/text_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

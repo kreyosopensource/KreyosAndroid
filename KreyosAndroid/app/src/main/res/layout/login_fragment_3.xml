@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/field_first_name_create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/bg_white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_first_name" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/field_last_name_create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:background="@color/bg_white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="23sp"
+            android:hint="@string/actlogin_text_last_name" />
+    </LinearLayout>
+
+    <!-- Birthday, Gender, Height, Weight -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp">
+
+        <!-- BIRTHDAY -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/actlogin_label_birthday"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_birthday_create_acct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/corner_bgwhite_stklightgray"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_birthday"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <!-- GENDER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="@string/actlogin_label_gender"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_gender_male_create_acct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/corner_left_bgwhite_stklightgray"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_gender_m"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_gender_female_create_acct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/corner_right_bgwhite_stklightgray"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_gender_f"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!-- HEIGHT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/actlogin_label_height"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_height_in_create_acct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/corner_right_bgwhite_stklightgray"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_height_in"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_height_ft_create_acct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/field_height_in_create_acct"
+                android:background="@drawable/corner_left_bgwhite_stklightgray"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_height_feet"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <!-- WEIGHT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/actlogin_label_weight"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/field_weight_create_acct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/corner_bgwhite_stklightgray"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/actlogin_val_weight"
+                android:textColor="@color/text_light_gray"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 'Done' button -->
+    <Button
+        android:id="@+id/btn_done_create_acct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_customstate_tealgray"
+        android:text="@string/actlogin_btn_signup_done"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

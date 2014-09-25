@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    OVERALL ACTIVITIES (total activity values)
+    created by: karla
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:baselineAligned="false"
+    android:background="@color/bg_sky_blue">
+
+    <!-- Date -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.32"
+        android:orientation="vertical"
+        android:background="@color/bg_yellow_green">
+
+        <!-- Day of the week -->
+        <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+            android:id="@+id/text_day_of_week"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="50sp"
+            android:text="@string/fragmentL2_text_day_of_the_week" />
+
+        <!-- Date -->
+        <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:text="@string/fragmentL2_text_date" />
+    </LinearLayout>
+
+    <!-- Values -->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.68"
+        android:baselineAligned="false" >
+
+        <!-- STEPS -->
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_label_steps" />
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:id="@+id/text_value_steps_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_steel_blue"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_text_value_0" />
+
+            <!-- for weight balance only -->
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!-- DISTANCE -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_label_distance" />
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:id="@+id/text_value_distance_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_steel_blue"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_text_value_0" />
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_steel_blue"
+                android:textSize="30sp"
+                android:text="@string/fragmentL2_text_unit_distance" />
+        </LinearLayout>
+
+        <!-- CALORIES -->
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_label_calories" />
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:id="@+id/text_value_calories_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_steel_blue"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/fragmentL2_text_value_0" />
+
+            <com.kreyos.kreyosandroid.utilities.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/text_steel_blue"
+                android:textSize="30sp"
+                android:text="@string/fragmentL2_text_unit_calories" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
